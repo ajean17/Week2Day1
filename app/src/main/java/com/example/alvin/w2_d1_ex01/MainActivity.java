@@ -41,7 +41,9 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
             Bundle extras = data.getExtras();
             imageBitmap = (Bitmap) extras.get("data");
-            mainImage.setImageBitmap(imageBitmap);
+            Bitmap newImage = Bitmap.createScaledBitmap(
+                   imageBitmap, 500, 500, false);
+            mainImage.setImageBitmap(newImage);
         }
     }
 

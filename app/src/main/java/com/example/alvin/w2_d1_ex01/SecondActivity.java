@@ -24,7 +24,7 @@ public class SecondActivity extends AppCompatActivity {
         if(intent != null) {
             Picture pic = intent.getParcelableExtra(MainActivity.DETAIL_EXTRA);
             Bitmap newImage = Bitmap.createScaledBitmap(
-                    pic.getImage(), 700, 700, false);
+                    pic.getImage(), 500, 500, false);
             detailImage.setImageBitmap(newImage);
             detailFirstName.setText(pic.getFirstName());
             detailLastName.setText(pic.getLastName());
