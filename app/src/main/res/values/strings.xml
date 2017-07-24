@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">W2-D1-ex01</string>
+    <string name="lbl_btn_camera">CAMERA</string>
+    <string name="lbl_btn_details">DETAILS</string>
+</resources>
